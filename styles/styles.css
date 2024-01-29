@@ -1,0 +1,206 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+a {
+    color: #001895;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #001895;
+    text-decoration: none;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 0em;
+
+    display: flex;
+    justify-content: center;
+}
+
+header a h1 {
+    color: white;
+    border-bottom: solid #333 0.6em;
+    transition-property: border-bottom;
+    transition-duration: 0.4s;
+    margin-bottom: 0px;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+}
+
+#selected{
+    border-bottom: solid #f0f0f0 0.6em;
+}
+
+header a h1:hover {
+    color: white;
+    border-bottom: solid #61b600 0.6em;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.16);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+.info {
+    padding: 1em;
+}
+
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    font-weight: 800;
+}
+
+.game-description {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.description {
+    display: grid;
+}
+
+.description img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.description a {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 6px;
+
+    transition-property: background-color, transform, color;
+    transition-duration: 0.3s, 0.3s, 0.3s;
+
+    font-weight: 600;
+
+    margin-top: 5px;
+    text-align: center;
+}
+
+.description a:hover {
+    background-color: #303030;
+    color: rgb(219, 219, 219);
+    transform: scale(1.10);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.3em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.img_ico{
+    height: 20px;
+    width: 20px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+main.codelist{
+    grid-template-columns: none;
+}
+
+main.codelist table tr th{
+    padding: 7px;
+}
+
+main.codelist table{
+    border-spacing: 0cap;
+    text-align: left;
+}
+
+main.codelist table tr td{
+    border-top: solid #303030 1px;
+    padding: 7px;
+
+}
+
+main.codelist table tr td a{
+    color: black;
+    font-weight: 300;
+    padding: 7px;
+    padding-left: 25px;
+}
+
+main.codelist table tr:hover{
+    background-color: #d4d4d4;
+}
+
+main.code{
+    display: block;
+}
+
+.textelement{
+    display: flex;
+
+    border: solid #868686 1px;
+    box-shadow: #333;
+    border-radius: 12px;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    flex-direction: column;
+}
+
+.datatext{
+    margin-bottom: 20px;
+}
+
+.copybutton {
+    height: min-content;
+    width: min-content;
+    padding: 4px;
+    margin-left: 92%;
+
+    border-radius: 8px;
+}
+
+.copybutton:hover{
+    background-color: #d6d6d6;
+    cursor: copy;
+
+    transition-property: background-color ;
+    transition-duration: 0.3s;
+}
+
+.copybutton img{
+    height: 40px;
+    width: 40px;
+}
